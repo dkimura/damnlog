@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./src",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es2016"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": [{ "name": "typescript-styled-plugin" }],
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "exclude": ["dist/**/*", "public/**/*"]
+}
