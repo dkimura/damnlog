@@ -1,23 +1,23 @@
 import * as React from 'react'
 
-import { Router, Link } from 'react-static'
+import { Router, Head, Link } from 'react-static'
 import Routes from 'react-static-routes'
 
-import { Container, Header } from 'components'
+import { Container } from 'components/Container'
+import { Header, Nav, NavItem } from 'components/Header'
 import 'utils/globalStyles'
-
-console.log(Header)
 
 export default () => (
   <Router>
     <React.Fragment>
       <Container>
+        <Head htmlAttributes={{ lang: 'ja-JP' }} />
         <Header>
-          <Header.Nav>
-            <Header.NavItem href="/">HOME</Header.NavItem>
-            <Header.NavItem href="/about">ABOUT</Header.NavItem>
-            <Header.NavItem href="/blog">REPO</Header.NavItem>
-          </Header.Nav>
+          <Nav>
+            <NavItem href="/">HOME</NavItem>
+            <NavItem href="/about">ABOUT</NavItem>
+            <NavItem href="/blog">REPO</NavItem>
+          </Nav>
         </Header>
         <div className="content">
           <Routes />
