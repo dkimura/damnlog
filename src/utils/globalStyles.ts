@@ -468,6 +468,16 @@ textarea {
   font-size: ${theme.fontSize.main}em;
   line-height: ${theme.lineHeight.body};
   word-wrap: break-word;
+
+  @media screen and (min-width: 480px) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-size: 1.125em
+    }
+  }
 }
 
 h1,
