@@ -1,3 +1,5 @@
+import React from 'react'
+import { ServerStyleSheet } from 'styled-components'
 import axios from 'axios'
 import path from 'path'
 
@@ -70,4 +72,20 @@ export default {
     ]
     return config
   },
+  renderToHtml: (render, Comp, meta) => {
+    const sheet = new ServerStyleSheet()
+    const html = render(sheet.collectStyles(<Comp />))
+    meta.styleTags = sheet.getStyleElement()
+    return html
+  },
+  Document: ({ Html, Head, Body, children, renderMeta }) => (
+    <Html>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {renderMeta.styleTags}
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  ),
 }
