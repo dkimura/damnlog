@@ -9,7 +9,7 @@ export const AboutPage: React.StatelessComponent<BasePageProps> = ({
 }) => (
   <Template onNavClick={handleHistoryPush}>
     <Hero>
-      <Title>About Me</Title>
+      <Title>[WIP] About Me</Title>
       <Description>Who am I?</Description>
     </Hero>
   </Template>
