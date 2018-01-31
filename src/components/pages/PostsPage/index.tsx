@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Template } from 'components/templates/Template'
 
 import { BasePageProps, Post } from 'types'
+import { Hero, Title, Description } from 'components/parts/Hero'
 
 interface Props extends BasePageProps {
   posts: Post[]
@@ -12,8 +13,10 @@ export const PostsPage: React.StatelessComponent<Props> = ({
   posts,
 }) => (
   <Template onNavClick={handleHistoryPush}>
-    <h1>PostsPage</h1>
-    <br />
+    <Hero>
+      <Title>Posts</Title>
+      <Description>my damn logs...</Description>
+    </Hero>
     All Posts:
     <ul>
       {posts.map(post => (

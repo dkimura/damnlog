@@ -1,4 +1,6 @@
 import * as React from 'react'
+
+import { Hero, Title, Description } from 'components/parts/Hero'
 import { Template } from 'components/templates/Template'
 
 import { BasePageProps, Post } from 'types'
@@ -12,16 +14,9 @@ export const PostPage: React.StatelessComponent<Props> = ({
   post,
 }) => (
   <Template onNavClick={handleHistoryPush}>
-    <h1>PostPage</h1>
-
-    <a
-      href="/posts"
-      onClick={event => handleHistoryPush && handleHistoryPush(event, '/posts')}
-    >
-      {'<'} Back
-    </a>
-
-    <h3>{post.title}</h3>
+    <Hero>
+      <Title>{post.title}</Title>
+    </Hero>
     <p>{post.body}</p>
   </Template>
 )
