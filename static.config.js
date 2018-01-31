@@ -16,6 +16,7 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
+        getProps: () => ({ posts }),
       },
       {
         path: '/about',
@@ -24,9 +25,7 @@ export default {
       {
         path: '/posts',
         component: 'src/containers/Posts',
-        getProps: () => ({
-          posts,
-        }),
+        getProps: () => ({ posts }),
         children: posts.map(post => ({
           path: `/${post.id}`,
           component: 'src/containers/Post',
