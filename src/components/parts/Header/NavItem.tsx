@@ -4,12 +4,27 @@ import styled, { css } from 'styled'
 interface Props {
   className?: string
   href: string
+  isActive?: boolean
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>, href: string) => void
 }
+
+const A = styled.a`
+  color: #455a64;
+`
 
 const styles = css`
   display: inline-flex;
   margin-right: 0.625em;
+
+  ${({ isActive }: Props) =>
+    isActive
+      ? css`
+          > ${A} {
+            font-weight: 700;
+            pointer-events: none;
+          }
+        `
+      : ''};
 `
 
 const NavItem: React.StatelessComponent<Props> = ({
@@ -19,9 +34,9 @@ const NavItem: React.StatelessComponent<Props> = ({
   onClick,
 }) => (
   <li className={className}>
-    <a href={href} onClick={event => onClick && onClick(event, href)}>
+    <A href={href} onClick={event => onClick && onClick(event, href)}>
       {children}
-    </a>
+    </A>
   </li>
 )
 
