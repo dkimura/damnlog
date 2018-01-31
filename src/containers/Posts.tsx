@@ -2,12 +2,12 @@ import { compose } from 'recompose'
 import { getRouteProps } from 'react-static'
 import { withHistory } from 'hoc/withHistory'
 
-import { PostPage } from 'components/pages/PostPage'
+import { PostsPage } from 'components/pages/PostsPage'
 
 import { Post } from 'types'
 
 interface InnerProps {
-  post: Post
+  posts: Post[]
 }
 
-export default compose<InnerProps, {}>(getRouteProps, withHistory)(PostPage)
+export default compose<InnerProps, {}>(getRouteProps, withHistory)(PostsPage)

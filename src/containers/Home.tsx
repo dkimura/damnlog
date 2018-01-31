@@ -1,8 +1,4 @@
-import * as React from 'react'
-import { getSiteProps } from 'react-static'
+import { HomePage } from 'components/pages/HomePage'
+import { withHistory } from 'hoc/withHistory'
 
-export default getSiteProps(() => (
-  <div>
-    <h1 style={{ textAlign: 'center' }}>Welcome to</h1>
-  </div>
-))
+export default withHistory(HomePage)

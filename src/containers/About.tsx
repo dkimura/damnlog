@@ -1,14 +1,4 @@
-import * as React from 'react'
+import { AboutPage } from 'components/pages/AboutPage'
+import { withHistory } from 'hoc/withHistory'
 
-// Example of using paths alias via tsconfig.json to easily re-use legacy code
-// Also, use TypeScript and JavaScript interchangeably.
-
-export default () => (
-  <div>
-    <h1>This is what we're all about.</h1>
-    <p>
-      React, static sites, performance, speed. It's the stuff that makes us
-      tick.
-    </p>
-  </div>
-)
+export default withHistory(AboutPage)

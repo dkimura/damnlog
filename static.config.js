@@ -20,13 +20,13 @@ export default {
         component: 'src/containers/About',
       },
       {
-        path: '/blog',
-        component: 'src/containers/Blog',
+        path: '/posts',
+        component: 'src/containers/Posts',
         getProps: () => ({
           posts,
         }),
         children: posts.map(post => ({
-          path: `/post/${post.id}`,
+          path: `/${post.id}`,
           component: 'src/containers/Post',
           getProps: () => ({
             post,
@@ -35,7 +35,7 @@ export default {
       },
       {
         is404: true,
-        component: 'src/containers/404',
+        component: 'src/containers/NotFound',
       },
     ]
   },
