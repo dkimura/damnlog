@@ -1,7 +1,8 @@
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
-import axios from 'axios'
 import path from 'path'
+
+import { loadContents } from './loadContents'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -12,9 +13,8 @@ export default {
     title: 'React Static',
   }),
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts',
-    )
+    const posts = loadContents('./contents')
+
     return [
       {
         path: '/',
