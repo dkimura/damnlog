@@ -5,7 +5,8 @@
   "scripts": {
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "start": "react-static start"
+    "start": "react-static start",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
     "axios": "0.17.1",
