@@ -6,7 +6,7 @@ ENV CI true
 WORKDIR /react-static-base
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm install --no-save
 
 COPY . /react-static-base
 
