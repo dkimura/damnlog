@@ -11,7 +11,7 @@ addons:
       - docker-ce
 
 before_install:
-  - docker build -t react-static-base .
+  - docker build -t damnlog .
 
 script:
-  - docker run react-static-base
+  - docker run damnlog

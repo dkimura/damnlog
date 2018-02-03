@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
-  siteRoot: isProd ? 'https://friendly-dijkstra-46f999.netlify.com' : '/',
+  siteRoot: isProd ? 'https://sleepy-kepler-969dff.netlify.com' : '/',
   getSiteData: () => ({
     title: 'React Static',
   }),
