@@ -5,7 +5,7 @@ import path from 'path'
 
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
-  getSiteProps: () => ({
+  getSiteData: () => ({
     title: 'React Static',
   }),
   getRoutes: async () => {
@@ -16,7 +16,7 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
-        getProps: () => ({ posts }),
+        getData: () => ({ posts }),
       },
       {
         path: '/about',
@@ -25,11 +25,11 @@ export default {
       {
         path: '/posts',
         component: 'src/containers/Posts',
-        getProps: () => ({ posts }),
+        getData: () => ({ posts }),
         children: posts.map(post => ({
           path: `/${post.id}`,
           component: 'src/containers/Post',
-          getProps: () => ({
+          getData: () => ({
             post,
           }),
         })),

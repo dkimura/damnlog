@@ -1,5 +1,5 @@
 import { compose } from 'recompose'
-import { getRouteProps } from 'react-static'
+import { withRouteData } from 'react-static'
 import { withHistory } from 'hoc/withHistory'
 
 import { HomePage } from 'components/pages/HomePage'
@@ -10,4 +10,4 @@ interface InnerProps {
   posts: Post[]
 }
 
-export default compose<InnerProps, {}>(getRouteProps, withHistory)(HomePage)
+export default compose<InnerProps, {}>(withRouteData, withHistory)(HomePage)
