@@ -1,6 +1,6 @@
-# react-static-base [![Build Status](https://travis-ci.org/dkimura/react-static-base.svg?branch=master)](https://travis-ci.org/dkimura/react-static-base)
+# damnlog [![Build Status](https://travis-ci.org/dkimura/damnlog.svg?branch=master)](https://travis-ci.org/dkimura/damnlog)
 
-> This is my `react-static` base templates.
+> This is my damn logs...
 
 ## Install
 
