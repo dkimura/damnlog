@@ -13,28 +13,28 @@ export const HomePage: React.StatelessComponent<Props> = ({
   handleHistoryPush,
   posts,
 }) => (
-  <Template onNavClick={handleHistoryPush}>
-    <Hero>
-      <Title>damnlog</Title>
-      <Description>my damn logs...</Description>
-    </Hero>
-    <main>
-      <h2>Recent Posts</h2>
-      <ul>
-        {posts.slice(0, 4).map(post => (
-          <li key={post.id}>
-            <a
-              href={`/posts/${post.id}/`}
-              onClick={event =>
-                handleHistoryPush &&
-                handleHistoryPush(event, `/posts/${post.id}/`)
-              }
-            >
-              {post.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </main>
-  </Template>
-)
+    <Template onNavClick={handleHistoryPush}>
+      <Hero>
+        <Title>damnlog</Title>
+        <Description>my damn logs...</Description>
+      </Hero>
+      <main>
+        <h2>Recent Posts</h2>
+        <ul>
+          {posts.slice(0, 4).map(post => (
+            <li key={post.slug}>
+              <a
+                href={`/posts/${post.slug}/`}
+                onClick={event =>
+                  handleHistoryPush &&
+                  handleHistoryPush(event, `/posts/${post.slug}/`)
+                }
+              >
+                {post.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </main>
+    </Template>
+  )
