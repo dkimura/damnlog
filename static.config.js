@@ -4,11 +4,8 @@ import path from 'path'
 
 import { loadContents } from './loadContents'
 
-const isProd = process.env.NODE_ENV === 'production'
-
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
-  siteRoot: isProd ? 'https://damnlog.bdd.xyz' : '/',
   getSiteData: () => ({
     title: 'damnlog',
     description: 'Mine has been a life of much shame.',
