@@ -1,6 +1,7 @@
 import * as React from 'react'
+import { Head } from 'react-static'
 
-import { Hero, Title, Description } from 'components/parts/Hero'
+import { Hero, Title } from 'components/parts/Hero'
 import { Template } from 'components/templates/Template'
 
 import remark from 'remark';
@@ -17,12 +18,18 @@ export const PostPage: React.StatelessComponent<Props> = ({
   post
 }) => (
     <Template onNavClick={handleHistoryPush}>
+      <Head>
+        <title>{post.title} | damnlog</title>
+        <meta name="description" content="Oh no's! We couldn't find that page :(" />
+      </Head>
       <Hero>
         <Title>{post.title}</Title>
       </Hero>
-      {post.body &&
-        remark()
-          .use(reactRenderer)
-          .processSync(post.body).contents}
+      <main>
+        {post.body &&
+          remark()
+            .use(reactRenderer)
+            .processSync(post.body).contents}
+      </main>
     </Template>
   )

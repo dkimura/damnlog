@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { Head } from 'react-static'
+
 import { Template } from 'components/templates/Template'
 
 import { BasePageProps, Post } from 'types'
@@ -12,26 +14,32 @@ export const PostsPage: React.StatelessComponent<Props> = ({
   handleHistoryPush,
   posts,
 }) => (
-  <Template onNavClick={handleHistoryPush}>
-    <Hero>
-      <Title>Posts</Title>
-      <Description>my damn logs...</Description>
-    </Hero>
-    All Posts:
-    <ul>
-      {posts.map(post => (
-        <li key={post.id}>
-          <a
-            href={`/posts/${post.id}/`}
-            onClick={event =>
-              handleHistoryPush &&
-              handleHistoryPush(event, `/posts/${post.id}/`)
-            }
-          >
-            {post.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </Template>
-)
+    <Template onNavClick={handleHistoryPush}>
+      <Head>
+        <title>Posts | damnlog</title>
+        <meta name="description" content="my damn logs..." />
+      </Head>
+      <Hero>
+        <Title>Posts</Title>
+        <Description>my damn logs...</Description>
+      </Hero>
+      <main>
+        <span>All Posts:</span>
+        <ul>
+          {posts.map(post => (
+            <li key={post.slug}>
+              <a
+                href={`/posts/${post.slug}/`}
+                onClick={event =>
+                  handleHistoryPush &&
+                  handleHistoryPush(event, `/posts/${post.slug}/`)
+                }
+              >
+                {post.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </main>
+    </Template>
+  )
