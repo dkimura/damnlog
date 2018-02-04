@@ -18,7 +18,7 @@
     "recompose": "0.26.0",
     "remark": "9.0.0",
     "remark-react": "4.0.1",
-    "styled-components": "3.1.5"
+    "styled-components": "3.1.6"
   },
   "devDependencies": {
     "@types/axios": "0.14.0",
