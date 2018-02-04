@@ -10,7 +10,8 @@ export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
   siteRoot: isProd ? 'https://damnlog.bdd.xyz' : '/',
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'damnlog',
+    description: 'Mine has been a life of much shame.',
   }),
   getRoutes: async () => {
     const posts = loadContents('./contents')
@@ -30,7 +31,7 @@ export default {
         component: 'src/containers/Posts',
         getData: () => ({ posts }),
         children: posts.map(post => ({
-          path: `/${post.id}`,
+          path: `/${post.slug}`,
           component: 'src/containers/Post',
           getData: () => ({
             post,
@@ -81,7 +82,7 @@ export default {
     return html
   },
   Document: ({ Html, Head, Body, children, renderMeta }) => (
-    <Html>
+    <Html lang="ja-JP">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

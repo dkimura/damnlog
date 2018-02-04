@@ -7,9 +7,10 @@ const getMarkdownFiles = entriesPath =>
   glob.sync(`${entriesPath}/**/*.md`, { root: process.cwd() })
 
 const formatPost = ({ data, content }) => ({
-  title: data.title,
-  date: data.date,
   body: content,
+  date: data.date,
+  slug: data.slug,
+  title: data.title,
 })
 
 export const loadContents = entriesPath =>

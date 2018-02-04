@@ -10,6 +10,6 @@ export interface BasePageProps extends TemplateProps {
 export interface Post {
   body: string
   date: string
-  title: string
   slug: string
+  title: string
 }
