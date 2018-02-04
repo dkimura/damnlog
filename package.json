@@ -14,7 +14,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-router": "4.2.0",
-    "react-static": "5.1.0",
+    "react-static": "5.1.1",
     "recompose": "0.26.0",
     "remark": "9.0.0",
     "remark-react": "4.0.1",
