@@ -1,22 +1,33 @@
 import { compose, withHandlers } from 'recompose'
 import { withRouter, RouteComponentProps } from 'react-static'
 
-export interface OuterProps {
+export interface Handlers {
   handleHistoryPush: (
+    event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
+    href: string,
+  ) => void
+  handleHistoryReplace: (
     event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
     href: string,
   ) => void
 }
 
-export const withHistory = compose<any, OuterProps>(
+export const withHistory = compose<any, Handlers>(
   withRouter,
-  withHandlers({
-    handleHistoryPush: ({ history }: RouteComponentProps<any>) => (
+  withHandlers<RouteComponentProps<any>, Handlers>({
+    handleHistoryPush: ({ history }) => (
       event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
       href: string,
     ) => {
       event.preventDefault()
       return history.push(href)
+    },
+    handleHistoryReplace: ({ history }) => (
+      event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
+      href: string,
+    ) => {
+      event.preventDefault()
+      return history.replace(href)
     },
   }),
 )
