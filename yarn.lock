@@ -6388,9 +6388,9 @@ react-stand-in@^4.0.0-beta.21:
   dependencies:
     shallowequal "^1.0.2"
 
-react-static@5.1.8:
-  version "5.1.8"
-  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.1.8.tgz#e141c45724f29a9cadd7e0c0abed5afe0ae4e300"
+react-static@5.1.12:
+  version "5.1.12"
+  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.1.12.tgz#bcd30abf9a76a58995a8b43b5389f97ec511b6d5"
   dependencies:
     "@types/react" "^16.0.18"
     "@types/react-helmet" "^5.0.3"
