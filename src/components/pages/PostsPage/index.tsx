@@ -5,7 +5,7 @@ import { Template } from 'components/templates/Template'
 import { PostList } from 'components/parts/PostList'
 
 import { BasePageProps, Post } from 'types'
-import { Hero, Title, Description } from 'components/parts/Hero'
+import { Hero, Title, Description, Meta } from 'components/parts/Hero'
 
 interface Props extends BasePageProps {
   posts: Post[]
@@ -22,7 +22,9 @@ export const PostsPage: React.StatelessComponent<Props> = ({
     </Head>
     <Hero>
       <Title>Posts</Title>
-      <Description>my damn logs...</Description>
+      <Meta>
+        <Description>my damn logs...</Description>
+      </Meta>
     </Hero>
     <main>
       <PostList posts={posts} onClick={handleHistoryPush} />

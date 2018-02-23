@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Head } from 'react-static'
 
-import { Hero, Title, Description } from 'components/parts/Hero'
+import { Hero, Title, Description, Meta } from 'components/parts/Hero'
 import { PostList } from 'components/parts/PostList'
 import { Template } from 'components/templates/Template'
 
@@ -22,7 +22,9 @@ export const HomePage: React.StatelessComponent<Props> = ({
     </Head>
     <Hero>
       <Title>damnlog</Title>
-      <Description>Mine has been a life of much shame.</Description>
+      <Meta>
+        <Description>Mine has been a life of much shame.</Description>
+      </Meta>
     </Hero>
     <main>
       <h2>Recent Posts</h2>
