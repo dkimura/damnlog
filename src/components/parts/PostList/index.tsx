@@ -41,7 +41,7 @@ export const PostList: React.StatelessComponent<Props> = ({
   <UL>
     {posts &&
       posts.map(post => (
-        <LI>
+        <LI key={`${post.date}-${post.slug}`}>
           <A
             href={post.slug}
             onClick={event => onClick && onClick(event, `/posts/${post.slug}/`)}
