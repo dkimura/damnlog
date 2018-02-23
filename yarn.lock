@@ -4974,6 +4974,13 @@ markdown-table@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.1.tgz#4b3dd3a133d1518b8ef0dbc709bf2a1b4824bc8c"
 
+markdown-to-jsx@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.4.1.tgz#95fe617b5790fec6f4e0399a296e3a2f10fffaad"
+  dependencies:
+    prop-types "^15.5.10"
+    unquote "^1.1.0"
+
 match-sorter@^2.0.2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-2.2.0.tgz#3e88661aab7b8320836f67731cf7f9d3cb889761"
@@ -7948,6 +7955,10 @@ universalify@^0.1.0:
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+
+unquote@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/unquote/-/unquote-1.1.1.tgz#8fded7324ec6e88a0ff8b905e7c098cdc086d544"
 
 unset-value@^1.0.0:
   version "1.0.0"

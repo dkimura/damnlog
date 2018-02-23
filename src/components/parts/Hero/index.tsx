@@ -17,7 +17,14 @@ export const Title = styled.h1`
   margin-bottom: 0;
 `
 
+export const Meta = styled.div`
+  margin-top: 0.75em;
+
+  > * {
+    margin-bottom: 0;
+  }
+`
+
 export const Description = styled.p`
-  margin-top: 0.5em;
   font-style: italic;
 `
