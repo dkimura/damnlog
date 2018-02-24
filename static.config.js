@@ -167,7 +167,7 @@ export default {
         {/* Facebook */}
         <meta property="og:url" content="https://damnlog.bdd.xyz" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Content Title" />
+        <meta property="og:title" content="damnlog" />
         <meta property="og:image" content="https://damnlog.bdd.xyz/ogp.png" />
         <meta
           property="og:description"
@@ -178,7 +178,7 @@ export default {
         <meta property="article:author" content="Daichi Kimura" />
 
         {/* twitter */}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@habu0104" />
         <meta name="twitter:url" content="https://damnlog.bdd.xyz" />
         <meta name="twitter:title" content="damnlog" />
