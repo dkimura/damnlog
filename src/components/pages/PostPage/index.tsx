@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled'
-import { Head } from 'react-static'
+import { Head } from 'components/parts/Head'
 
 import { Icon } from 'components/parts/Icon'
 import { Hero, Title, Meta } from 'components/parts/Hero'
@@ -29,13 +29,10 @@ export const PostPage: React.StatelessComponent<Props> = ({
   post,
 }) => (
   <Template onNavClick={handleHistoryPush}>
-    <Head>
-      <title>{post.title} | damnlog</title>
-      <meta
-        name="description"
-        content="Oh no's! We couldn't find that page :("
-      />
-    </Head>
+    <Head
+      title={`${post.title} | damnlog`}
+      description="Mine has been a life of much shame." // TODO: Get Post Description
+    />
     <Hero>
       <Title>{post.title}</Title>
       <Meta>

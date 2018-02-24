@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Head } from 'react-static'
+import { Head } from 'components/parts/Head'
 import { Template } from 'components/templates/Template'
 
 import { BasePageProps } from 'types'
@@ -9,10 +9,7 @@ export const AboutPage: React.StatelessComponent<BasePageProps> = ({
   handleHistoryPush,
 }) => (
   <Template onNavClick={handleHistoryPush}>
-    <Head>
-      <title>[WIP] About Me | damnlog</title>
-      <meta name="description" content="Who am I?" />
-    </Head>
+    <Head title="[WIP] About Me | damnlog" description="Who am I?" />
     <Hero>
       <Title>[WIP] About Me</Title>
       <Meta>

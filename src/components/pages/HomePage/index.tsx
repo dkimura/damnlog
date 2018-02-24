@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Head } from 'react-static'
+import { Head } from 'components/parts/Head'
 
 import { Hero, Title, Description, Meta } from 'components/parts/Hero'
 import { PostList } from 'components/parts/PostList'
@@ -16,10 +16,7 @@ export const HomePage: React.StatelessComponent<Props> = ({
   posts,
 }) => (
   <Template onNavClick={handleHistoryPush}>
-    <Head>
-      <title>damnlog</title>
-      <meta name="description" content="Mine has been a life of much shame." />
-    </Head>
+    <Head title="damnlog" description="Mine has been a life of much shame." />
     <Hero>
       <Title>damnlog</Title>
       <Meta>
