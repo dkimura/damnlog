@@ -178,7 +178,7 @@ export default {
         <meta property="article:author" content="Daichi Kimura" />
 
         {/* twitter */}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@habu0104" />
         <meta name="twitter:url" content="https://damnlog.bdd.xyz" />
         <meta name="twitter:title" content="damnlog" />
