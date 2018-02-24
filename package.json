@@ -5,8 +5,7 @@
   "scripts": {
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "start": "react-static start",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "start": "react-static start"
   },
   "dependencies": {
     "frontmatter": "0.0.3",
