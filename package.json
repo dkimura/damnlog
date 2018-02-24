@@ -9,7 +9,6 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
-    "axios": "0.18.0",
     "frontmatter": "0.0.3",
     "markdown-to-jsx": "6.4.1",
     "react": "16.2.0",
@@ -17,12 +16,9 @@
     "react-router": "4.2.0",
     "react-static": "5.1.14",
     "recompose": "0.26.0",
-    "remark": "9.0.0",
-    "remark-react": "4.0.1",
     "styled-components": "3.1.6"
   },
   "devDependencies": {
-    "@types/axios": "0.14.0",
     "@types/node": "8.9.4",
     "@types/react": "16.0.38",
     "@types/react-dom": "16.0.4",
