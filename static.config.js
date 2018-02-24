@@ -167,7 +167,7 @@ export default {
         {/* Facebook */}
         <meta property="og:url" content="https://damnlog.bdd.xyz" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Content Title" />
+        <meta property="og:title" content="damnlog" />
         <meta property="og:image" content="https://damnlog.bdd.xyz/ogp.png" />
         <meta
           property="og:description"
