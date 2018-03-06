@@ -2832,7 +2832,7 @@ eslint-module-utils@^2.1.1:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-class-property@^1.0.6:
+eslint-plugin-class-property@^1.0.6, eslint-plugin-class-property@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-class-property/-/eslint-plugin-class-property-1.1.0.tgz#355784133d4852b8870bd1cb429a1b0403cc7aef"
   dependencies:
@@ -2850,6 +2850,21 @@ eslint-plugin-import@^2.7.0:
     eslint-module-utils "^2.1.1"
     has "^1.0.1"
     lodash.cond "^4.3.0"
+    minimatch "^3.0.3"
+    read-pkg-up "^2.0.0"
+
+eslint-plugin-import@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.9.0.tgz#26002efbfca5989b7288ac047508bd24f217b169"
+  dependencies:
+    builtin-modules "^1.1.1"
+    contains-path "^0.1.0"
+    debug "^2.6.8"
+    doctrine "1.5.0"
+    eslint-import-resolver-node "^0.3.1"
+    eslint-module-utils "^2.1.1"
+    has "^1.0.1"
+    lodash "^4.17.4"
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
 
@@ -6341,9 +6356,9 @@ react-smackdown@^0.8.7:
     react-syntax-highlighter "^7.0.0"
     showdown "^1.8.6"
 
-react-static@5.5.2:
-  version "5.5.2"
-  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.5.2.tgz#09ad6c7301da14ad8fd51bc8bcce618f8ebdf0d2"
+react-static@5.5.4:
+  version "5.5.4"
+  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.5.4.tgz#d2f26237482929835e1575ec5aa1b46a879863fb"
   dependencies:
     "@types/react" "^16.0.18"
     "@types/react-helmet" "^5.0.3"
@@ -6352,6 +6367,7 @@ react-static@5.5.2:
     autoprefixer "^7.1.5"
     axios "^0.16.2"
     babel-cli "^6.26.0"
+    babel-core "^6.26.0"
     babel-loader "^7.1.2"
     babel-plugin-transform-class-properties "^6.24.1"
     babel-plugin-transform-runtime "^6.23.0"
@@ -6372,6 +6388,8 @@ react-static@5.5.2:
     cross-spawn "^5.1.0"
     css-loader "^0.28.7"
     download-git-repo "^1.0.2"
+    eslint-plugin-class-property "^1.1.0"
+    eslint-plugin-import "^2.9.0"
     extract-css-chunks-webpack-plugin "^2.0.18"
     extract-hoc "^0.0.5"
     extract-hoc-compose "^0.0.1"
