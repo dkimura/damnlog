@@ -6341,9 +6341,9 @@ react-smackdown@^0.8.7:
     react-syntax-highlighter "^7.0.0"
     showdown "^1.8.6"
 
-react-static@5.3.4:
-  version "5.3.4"
-  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.3.4.tgz#4738d2361026cef9ba29893a195d73409282ca68"
+react-static@5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.4.0.tgz#6b756c85d8839109d4f8819d57dec7d7b78f0c18"
   dependencies:
     "@types/react" "^16.0.18"
     "@types/react-helmet" "^5.0.3"
@@ -6390,6 +6390,7 @@ react-static@5.3.4:
     postcss-loader "^2.0.6"
     preact "^8.2.7"
     preact-compat "^3.17.0"
+    progress "^2.0.0"
     prop-types "^15.5.10"
     raf "^3.4.0"
     raw-loader "^0.5.1"
