@@ -6452,9 +6452,9 @@ react-static@5.4.0-beta.2:
     webpack-flush-chunks "^1.2.3"
     webpack-node-externals "^1.6.0"
 
-react-static@5.5.9:
-  version "5.5.9"
-  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.5.9.tgz#3467efb811244723d15b3a8ba2010c4ef9b6d789"
+react-static@5.5.10:
+  version "5.5.10"
+  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.5.10.tgz#da17bd27009860f1e5f1d44a8e7e44c458e37f19"
   dependencies:
     "@types/react" "^16.0.18"
     "@types/react-helmet" "^5.0.3"
