@@ -1,4 +1,3 @@
-
 import { readFileSync } from 'fs'
 import glob from 'glob'
 import fm from 'frontmatter'
@@ -17,4 +16,5 @@ export const loadContents = entriesPath =>
   getMarkdownFiles(entriesPath)
     .map(path => readFileSync(path, 'utf-8'))
     .map(fm)
+    .sort((a, b) => (a.data.date < b.data.date ? 1 : -1))
     .map(formatPost)
