@@ -158,9 +158,9 @@
   version "16.0.41"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.41.tgz#72146737f4d439dc95a53315de4bfb43ac8542ca"
 
-"@types/recompose@0.24.6":
-  version "0.24.6"
-  resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.24.6.tgz#8087597ae461e5bb45d273c4fa6b5f1f721ce321"
+"@types/recompose@0.24.7":
+  version "0.24.7"
+  resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.24.7.tgz#8a62a76227053970476b208d859b70e398baabc5"
   dependencies:
     "@types/react" "*"
 
