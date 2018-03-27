@@ -13,7 +13,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-router": "4.2.0",
-    "react-static": "5.6.2",
+    "react-static": "5.6.3",
     "recompose": "0.26.0",
     "styled-components": "3.2.3"
   },
