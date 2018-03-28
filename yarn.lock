@@ -2813,9 +2813,9 @@ eslint-config-airbnb@16.1.0:
   dependencies:
     eslint-config-airbnb-base "^12.1.0"
 
-eslint-config-react-tools@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-react-tools/-/eslint-config-react-tools-1.2.0.tgz#9cbcfe87f62891b8ec46ec8d61a0ad4637e9a62d"
+eslint-config-react-tools@1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-tools/-/eslint-config-react-tools-1.2.5.tgz#b5a6d80c18b8be7f5c1fcd50e0028428ea4247fe"
   dependencies:
     babel-eslint "^8.2.2"
     eslint "^4.19.1"
