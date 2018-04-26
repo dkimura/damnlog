@@ -6173,9 +6173,9 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-static@5.8.3:
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.8.3.tgz#9de1d219612ffaa7420ec1fae892f204cb747dda"
+react-static@5.8.5:
+  version "5.8.5"
+  resolved "https://registry.yarnpkg.com/react-static/-/react-static-5.8.5.tgz#acefacb45152fc252b1bdabf1a5ba9ea3b8bf18f"
   dependencies:
     "@types/react" "^16.0.18"
     "@types/react-helmet" "^5.0.3"
