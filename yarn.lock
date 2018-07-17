@@ -143,9 +143,9 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-router@4.0.28":
-  version "4.0.28"
-  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.28.tgz#b0445fc38613c81e92ca9ec0e08ab36697d51003"
+"@types/react-router@4.0.29":
+  version "4.0.29"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.29.tgz#1a906dd99abf21297a5b7cf003d1fd36e7a92069"
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
