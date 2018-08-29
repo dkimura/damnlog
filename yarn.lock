@@ -4768,9 +4768,9 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-to-jsx@6.7.1:
-  version "6.7.1"
-  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.7.1.tgz#25b2304ad7aa617ba7ca2116a6b5821b8b22859b"
+markdown-to-jsx@6.7.2:
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.7.2.tgz#07279665714c9fee57b093a2548e63f455d04a9b"
   dependencies:
     prop-types "^15.5.10"
     unquote "^1.1.0"
