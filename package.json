@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "frontmatter": "0.0.3",
-    "markdown-to-jsx": "6.7.3",
+    "markdown-to-jsx": "6.7.4",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-router": "4.3.1",
