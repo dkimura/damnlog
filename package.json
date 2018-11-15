@@ -18,7 +18,7 @@
     "styled-components": "3.4.10"
   },
   "devDependencies": {
-    "@types/node": "8.10.37",
+    "@types/node": "8.10.38",
     "@types/react": "16.7.6",
     "@types/react-dom": "16.0.9",
     "@types/react-hot-loader": "3.0.6",
