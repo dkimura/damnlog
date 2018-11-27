@@ -1,5 +1,5 @@
 
-FROM node:alpine@sha256:f6a5c01cf560e99de9b273cfee30021955e5a083558f9b1ae5556a813c1ef2fe
+FROM node:alpine@sha256:5597d19ee1b02f780b0ddc7dcb17648ec576e83d2bc44e7ea34e3df72678599d
 
 ENV CI true
 
