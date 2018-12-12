@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "8.10.38",
-    "@types/react": "16.7.14",
+    "@types/react": "16.7.15",
     "@types/react-dom": "16.0.11",
     "@types/react-hot-loader": "3.0.6",
     "@types/react-router": "4.4.3",
