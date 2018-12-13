@@ -168,9 +168,9 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/recompose@0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.30.0.tgz#25d1e7bf31b096c2edf6239876dcfa7c167ce03f"
+"@types/recompose@0.30.1":
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.30.1.tgz#5c4326d11418af91ad937e55e0ecdd8acc4314fb"
   dependencies:
     "@types/react" "*"
 
