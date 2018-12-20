@@ -10,8 +10,8 @@
   "dependencies": {
     "frontmatter": "0.0.3",
     "markdown-to-jsx": "6.9.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
     "react-router": "4.3.1",
     "react-static": "5.9.12",
     "recompose": "0.30.0",
